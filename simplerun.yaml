@@ -1,0 +1,13 @@
+version: 1.0.0
+
+prescripts:
+  - name: Environment Setup
+    file: ./.simplerun/env-setup.sh
+
+containers:
+  - name: Local Development Environment
+    file: ./docker/docker-compose.yml
+
+postscripts:
+  - name: Open Supabase Studio
+    file: ./.simplerun/open-browser.sh
